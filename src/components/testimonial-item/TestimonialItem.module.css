@@ -1,0 +1,30 @@
+.testimony {
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  margin-block: 0.5rem;
+  margin-inline: 1rem;
+  max-width: 25rem;
+  cursor: pointer;
+  background: hsl(360, 100%, 100%);
+
+  transition: all 0.3s ease;
+}
+
+.testimony:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.central {
+  align-items: center;
+  gap: 0.5rem;
+  margin-block: 0.5rem;
+}
+
+.testifier {
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+}

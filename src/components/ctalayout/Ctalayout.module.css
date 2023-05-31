@@ -1,0 +1,113 @@
+.mb4 {
+  margin-block: 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  background: hsl(360, 100%, 100%);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  margin-block: 0.5rem;
+}
+
+.rem4 {
+  font-size: clamp(2rem, 3rem, 4rem);
+}
+
+.lb {
+  display: none;
+}
+
+.gridImg {
+  position: relative;
+}
+
+.image {
+  display: block;
+  object-fit: cover;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.pad1 {
+  padding-block: 1rem;
+  padding-inline: 1rem;
+}
+
+.pad1 > * {
+  margin-block: 0.5rem;
+}
+
+.mute{
+  color: hsla(0, 0%, 0%, 0.7);
+}
+
+.blur{
+  color: hsla(0, 0%, 0%, 0.9);
+}
+
+.mb1 {
+  margin-block-end: 1rem;
+}
+
+.ctaButton {
+  text-decoration: none;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  font-size: 1.2rem;
+  vertical-align: center;
+  text-align: center;
+  align-self: flex-start;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  color: var(--neutral-50);
+  background: hsl(0, 100%, 50%);
+}
+
+.ctaButton:hover,
+.ctaButton:focus {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  transform: scale(0.95);
+}
+
+@media (max-width: 1000px) {
+  .rem4 {
+    font-size: clamp(2rem, 3rem, 4rem);
+  }
+  .btn {
+    text-transform: capitalize;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .central {
+    display: grid;
+    place-self: center;
+    overflow: hidden;
+  }
+
+  .tc {
+    text-align: start;
+  }
+
+  .lb {
+    display: block;
+  }
+
+  .rem4 {
+    font-size: 2rem;
+  }
+}

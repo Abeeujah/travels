@@ -1,0 +1,15 @@
+.image {
+  object-fit: cover;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 991px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hidden {
+    display: none;
+  }
+}

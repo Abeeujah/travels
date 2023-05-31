@@ -1,0 +1,10 @@
+.flex {
+  gap: 1rem;
+}
+
+@media (max-width: 639px) {
+  .flex {
+    flex-direction: column;
+    gap: 0;
+  }
+}

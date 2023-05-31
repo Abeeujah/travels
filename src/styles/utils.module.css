@@ -1,0 +1,200 @@
+.container,
+.containerFluid {
+  width: 100%;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.textCapitalize {
+  text-transform: capitalize;
+}
+
+.textUpperCase {
+  text-transform: uppercase;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.heading2Xl {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  /* margin-block: 1rem; */
+  margin-inline: 0;
+}
+
+.headingXl {
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  /* margin-block: 1rem; */
+  margin-inline: 0;
+}
+
+.headingLg {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  /* margin-block: 1rem; */
+  margin-inline: 0;
+}
+
+.headingMd {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.borderCircle {
+  border-radius: 9999px;
+}
+
+.colorInherit {
+  color: inherit;
+}
+
+.padding1px {
+  padding-block-start: 1px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.colorGrey {
+  color: var(--neutral-900);
+}
+
+.colorBlack {
+  color: var(--neutral-950);
+}
+
+.blackBg {
+  background: var(--neutral-950);
+}
+
+.colorWhite {
+  color: var(--neutral-50);
+}
+
+.whiteBg {
+  background: var(--neutral-50);
+}
+
+.colorNasBlue {
+  color: hsl(251, 83%, 19%);
+}
+
+.nasBlueBg {
+  background: hsl(251, 83%, 19%);
+}
+
+.colorNasRed {
+  color: hsl(0, 100%, 50%);
+}
+
+.nasRedBg {
+  background: hsl(0, 100%, 50%);
+}
+
+.neutral50 {
+  color: var(--neutral-50);
+}
+
+.neutral100 {
+  color: var(--neutral-100);
+}
+
+.neutral200 {
+  color: var(--neutral-200);
+}
+
+.neutral300 {
+  color: var(--neutral-300);
+}
+
+.neutral900 {
+  color: var(--neutral-900);
+}
+
+.neutral950 {
+  color: var(--neutral-950);
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.flex,
+.flexCol {
+  display: flex;
+}
+
+.flexCol {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.gap1 {
+  gap: 1rem;
+}
+
+.mBlock {
+  margin-block: 4rem;
+}
+
+.visuallyHidden {
+  border-width: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+
+.grid,
+.grid2,
+.placeCenter {
+  display: grid;
+}
+
+.grid2 {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.placeCenter {
+  place-items: center;
+}

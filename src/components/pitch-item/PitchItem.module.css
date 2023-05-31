@@ -1,0 +1,44 @@
+.flex {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 0.5rem;
+  margin-block: 1rem;
+  cursor: pointer;
+  background: hsl(360, 100%, 100%);
+  transition: all 0.3s ease;
+}
+
+.iconContainer {
+  align-self: flex-start;
+}
+
+.icon {
+  filter: drop-shadow(3px 5px 1px rgba(0, 0, 0, 0.3));
+}
+
+.flex:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+@media (max-width: 639px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .iconContainer {
+    align-self: center;
+  }
+
+  .icon {
+    font-size: 3rem;
+  }
+
+  .textCenter {
+    text-align: center;
+  }
+}

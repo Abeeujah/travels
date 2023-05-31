@@ -1,0 +1,43 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  background: hsl(360, 100%, 100%);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 0.5rem;
+  margin-block: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.icon {
+  filter: drop-shadow(3px 5px 1px rgba(0, 0, 0, 0.3));
+}
+
+.flex:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.head {
+  font-weight: 700;
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.5rem);
+}
+
+.text {
+  text-align: center;
+}
+
+@media (max-width: 639px) {
+  .icon {
+    font-size: 3rem;
+  }
+
+  .textCenter {
+    text-align: center;
+  }
+}

@@ -1,0 +1,22 @@
+.flex {
+  justify-content: start;
+  background: hsl(360, 100%, 100%);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.flex p {
+  color: var(--neutral-900);
+  text-transform: capitalize;
+}
+
+@media (max-width: 639px) {
+  .flex {
+    align-items: center;
+  }
+
+  .textCenter {
+    text-align: center;
+  }
+}

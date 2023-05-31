@@ -1,0 +1,54 @@
+.whiteBg {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: var(--neutral-50);
+  cursor: pointer;
+  background: hsl(360, 100%, 100%);
+  transition: all 0.3s ease;
+}
+
+.whiteBg:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.p5 {
+  padding: 0.5rem;
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+.gap {
+  gap: 0.5rem;
+}
+
+.portfolioImage {
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.portfolioImage:hover {
+  transform: scale(1.1);
+}
+
+.link {
+  color: hsl(360, 100%, 100%);
+  background: hsl(0, 100%, 50%);
+  align-self: flex-start;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 400px) {
+  
+}

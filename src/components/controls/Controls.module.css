@@ -1,0 +1,17 @@
+.mb1 {
+  margin-block-start: 1rem;
+  margin-block-end: 2rem;
+}
+
+.spaceBet {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 639px) {
+  .spaceBet {
+    justify-content: center;
+    gap: 1rem;
+  }
+}

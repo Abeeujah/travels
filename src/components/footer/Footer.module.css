@@ -1,0 +1,96 @@
+.pb1 {
+  padding-block: 1rem;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  padding-block-end: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand {
+  max-width: 25rem;
+}
+
+.footItem {
+  margin-block: 0.5rem;
+}
+
+.footLink {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.footLink:hover {
+  color: hsl(0, 100%, 50%);
+}
+
+.footLink::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: hsl(0, 100%, 50%);
+  transition: width 0.3s;
+}
+
+.footLink:hover::after {
+  width: 100%;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-block-start: 0.5rem;
+}
+
+.brandIcons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inBlock {
+  padding-inline: 2px;
+  color: hsl(360, 100%, 100%);
+}
+
+.inBlock:hover {
+  color: hsl(0, 100%, 50%);
+}
+
+@media (min-width: 320px) {
+  .copyright {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 767px) {
+  .mbChildren {
+    margin-block-end: 1rem;
+  }
+
+  .footItem:last-child {
+    margin-block-end: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .footerContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .textStart {
+    text-align: start;
+  }
+
+  .mbEnd {
+    margin-block-end: 1rem;
+  }
+}

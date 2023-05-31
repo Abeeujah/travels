@@ -1,0 +1,50 @@
+.gridText {
+  padding-inline: 1rem;
+  background: hsl(360, 100%, 100%);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0.5rem;
+}
+
+.gridText > * {
+  margin-block: 1rem;
+}
+
+.gridImg {
+  position: relative;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.img {
+  display: block;
+  object-fit: cover;
+}
+
+.gridImg,
+.img {
+  border-radius: 0.5rem;
+}
+
+.spaceBet {
+  align-items: center;
+  gap: 1rem;
+}
+
+.lb {
+  display: none;
+}
+
+@media (min-width: 1001px) {
+  .lb {
+    display: block;
+  }
+}
+
+@media (max-width: 999px) {
+  .mBlock {
+    margin-block: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
